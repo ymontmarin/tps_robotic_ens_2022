@@ -30,6 +30,11 @@ Create and activate conda environment
 conda env create -f ens2022_env.yml
 conda activate ens2022
 ```
+Launch jupyter
+```bash
+
+jupyter-lab
+```
 
 ### Update the notebooks
 
