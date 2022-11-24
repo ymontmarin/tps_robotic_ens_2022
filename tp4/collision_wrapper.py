@@ -48,7 +48,7 @@ class CollisionWrapper:
         J2=pin.getJointJacobian(self.rmodel,self.rdata,joint2,pin.ReferenceFrame.LOCAL)
         Jc1=cMj1.action@J1
         Jc2=cMj2.action@J2
-        J = (Jc1-Jc2)[2,:]
+        J = (Jc2-Jc1)[2,:]
         return J
 
     def _getCollisionJdotQdot(self,col,res):
@@ -82,7 +82,7 @@ class CollisionWrapper:
         if collisions is None: collisions = self.getCollisionList()
         if len(collisions)==0: return np.array([])
         a0 = np.vstack([ self._getCollisionJdotQdot(c,r) for (i,c,r) in collisions ])
-        return a0
+        return a0.squeeze()
 
     def getCollisionDistances(self,collisions=None):
         if collisions is None: collisions = self.getCollisionList()
