@@ -12,3 +12,20 @@ dependencies:
   - scipy
   - quadprog
   - crocoddyl
+
+
+name: robotic_course
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pinocchio
+  - meshcat-python
+  - example-robot-data
+  - jupyterlab
+  - ipywidgets
+  - matplotlib
+  - scipy
+  - quadprog
+  - crocoddyl
