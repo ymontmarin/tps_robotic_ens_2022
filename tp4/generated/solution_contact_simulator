@@ -11,7 +11,7 @@ for it in range(N_steps):
     b = pin.nle(robot.model, robot.data, q, vq)
 
     # Compute the PD control.
-    tauq = - Kp * (q - qdes(t)) - Kv * (vq - qdes.velocity(t))
+    tauq = - Kp * (q - qdes(t)) - Kv * (vq - qdes.velocity(t)) + alpha * qdes.acceleration(t)
     tauq_frottement = - Kf * vq
     
     # Simulated the resulting acceleration (forward dynamics
