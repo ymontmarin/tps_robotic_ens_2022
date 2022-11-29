@@ -4,22 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.9
-  - pinocchio
-  - meshcat-python
-  - example-robot-data
-  - jupyterlab
-  - matplotlib
-  - scipy
-  - quadprog
-  - crocoddyl
-
-
-name: robotic_course
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python=3.9
+  - numpy=2.22
   - pinocchio
   - meshcat-python
   - example-robot-data
