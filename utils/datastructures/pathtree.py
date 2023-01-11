@@ -1,6 +1,6 @@
 import numpy as np
 import pickle as pkl
-from cspace_metric.datastructures.storage import Storage
+from utils.datastructures.storage import Storage
 
 
 class PathTree:
