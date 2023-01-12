@@ -22,7 +22,7 @@ class Storage:
         self.N = N
         self.dim = dim
         self.n = np.intp(0)
-        self.data = np.zeros((N, dim), dtype=np.float)
+        self.data = np.zeros((N, dim), dtype=float)
 
     def add_point(self, p):
         assert not self.is_full

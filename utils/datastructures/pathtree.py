@@ -21,8 +21,8 @@ class PathTree:
     def __init__(self, storage):
         self.storage = storage
         self.parent = np.zeros(storage.N, dtype=np.intp)
-        self.cost = np.zeros(storage.N, dtype=np.float)
-        self.depth = np.zeros(storage.N, dtype=np.int)
+        self.cost = np.zeros(storage.N, dtype=float)
+        self.depth = np.zeros(storage.N, dtype=int)
 
     def update_link(self, q_idx, parent_idx, c=1.):
         self.parent[q_idx] = parent_idx
