@@ -184,8 +184,6 @@ if __name__ == "__main__":
         col.displayCollisions()
         p = cols[0][1]
         ci = cols[0][2].getContact(0)
-        print(robot.gmodel.geometryObjects[p.first].name,robot.gmodel.geometryObjects[p.second].name)
-        print(ci.pos)
         
         import pickle
         with open('/tmp/bug.pickle', 'wb') as file:
@@ -196,4 +194,3 @@ if __name__ == "__main__":
 
     dist=col.getCollisionDistances()
     J = col.getCollisionJacobian()
-    
