@@ -27,8 +27,8 @@ Go into the repository folder.
 Create and activate conda environment
 
 ```bash
-conda env create -f ens2022_env.yml
-conda activate ens2022
+conda env create -f robotic_course_env.yml
+conda activate robotic_course
 ```
 Launch jupyter
 ```bash
